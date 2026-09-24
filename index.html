@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catarina Rocha — Portfólio</title>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32.png?v=3">
+  <link rel="icon" type="image/png" sizes="512x512" href="media/favicon.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="media/favicon-180.png?v=3">
+
+  <meta name="description" content="Portfólio de Catarina Rocha, designer de comunicação baseada no Porto, com foco em motion design, edição e vídeo.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Catarina Rocha — Portfólio">
+  <meta property="og:description" content="Designer de comunicação baseada no Porto. Motion design, edição e vídeo.">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:url" content="https://catarinadsrocha.github.io/">
+  <meta property="og:image" content="https://catarinadsrocha.github.io/media/partilha.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="style.css?v=37">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__marca">
+      <a href="#top" class="nav__logo">catarina rocha</a>
+      <span class="nav__meta">PORTFÓLIO</span>
+    </div>
+    <button type="button" id="abrir-menu" class="nav__hamburguer" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#projetos">Projetos</a>
+      <button type="button" id="abrir-sobre" class="nav__botao">Sobre</button>
+    </nav>
+  </header>
+
+  <!-- PÁGINA PRINCIPAL -->
+  <main id="pagina-principal">
+
+    <!-- LANDING -->
+    <section id="top" class="hero">
+      <!-- Ao trocar o vídeo: gerar novo poster e subir o ?v= nas duas linhas -->
+      <video class="hero__media" autoplay muted playsinline preload="auto"
+             disablepictureinpicture disableremoteplayback
+             src="media/LandingPageFundo2.mp4?v=2" poster="media/landing-poster.jpg?v=2"></video>
+      <div class="hero__overlay"></div>
+      <a href="#projetos" class="hero__cta">VER PROJETOS</a>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="projetos">
+      <h1 class="projetos__titulo">Projetos</h1>
+
+      <ul id="lista-projetos" class="lista"></ul>
+    </section>
+
+  </main>
+
+  <!-- PÁGINA DE PROJETO — preenchida pelo script.js -->
+  <article id="pagina-projeto" class="projeto" hidden>
+    <div class="projeto__lado">
+      <a href="#projetos" class="projeto__voltar label">← VOLTAR</a>
+      <aside class="projeto__ficha" id="projeto-ficha"></aside>
+      <div class="projeto__texto">
+        <h2 class="projeto__titulo" id="projeto-titulo"></h2>
+        <div id="projeto-descricao"></div>
+        <div id="projeto-links" class="projeto__links"></div>
+      </div>
+    </div>
+
+    <div class="projeto__grelha" id="projeto-grelha"></div>
+  </article>
+
+  <!-- POP-UP SOBRE -->
+  <div id="sobre" class="modal" hidden>
+    <div class="modal__fundo" data-fechar></div>
+    <div class="modal__caixa" role="dialog" aria-modal="true" aria-labelledby="sobre-titulo">
+      <button type="button" class="modal__fechar" data-fechar aria-label="Fechar">✕</button>
+      <h2 id="sobre-titulo" class="modal__titulo">Sobre mim</h2>
+      <p>
+        Designer de comunicação com interesse em motion design, edição e vídeo.
+      </p>
+      <p class="modal__contactos">
+        <a href="mailto:catarinarocha0810@gmail.com">catarinarocha0810@gmail.com ↗</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="preview" class="preview"><img alt=""></div>
+
+  <script src="script.js?v=33"></script>
+</body>
+</html>

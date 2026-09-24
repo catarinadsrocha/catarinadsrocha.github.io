@@ -1,0 +1,11 @@
+# ficheiros do macOS
+.DS_Store
+
+# arquivo local — não é preciso no site publicado
+media/_originais/
+media/_nao-usados/
+
+# ficheiros de trabalho
+servidor.py
+.vscode/
+.claude/
